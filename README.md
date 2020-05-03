@@ -1,2 +1,4 @@
-# HelpSystem
-Help for applications
+Sitepackage for the project "MeerCAD Help"
+==============================================================
+
+Add some explanation here.

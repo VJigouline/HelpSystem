@@ -1,0 +1,7 @@
+#
+# PageTS for MeerCAD Help
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:meercad_help/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:meercad_help/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:meercad_help/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:meercad_help/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
