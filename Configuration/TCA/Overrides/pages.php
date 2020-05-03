@@ -6,14 +6,14 @@ call_user_func(function()
     /**
      * Temporary variables
      */
-    $extensionKey = 'meercad_help';
+    $extensionKey = 'help_system';
 
     /**
-     * Default PageTS for MeercadHelp
+     * Default PageTS for HelpSystem
      */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
         'Configuration/TsConfig/Page/All.tsconfig',
-        'MeerCAD Help'
+        'Help System'
     );
 });

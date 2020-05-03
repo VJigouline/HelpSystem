@@ -1,24 +1,22 @@
 <?php
 
 /**
- * Extension Manager/Repository config file for ext "meercad_help".
+ * Extension Manager/Repository config file for ext "help_system".
  */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'MeerCAD Help',
-    'description' => 'Help system for MeerCAD applications',
+    'title' => 'Help System',
+    'description' => 'Help system for MeerCAD applications.',
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.2.0-10.4.99',
-            'fluid_styled_content' => '10.2.0-10.4.99',
-            'rte_ckeditor' => '10.2.0-10.4.99',
+            'bootstrap_package' => '10.0.0-10.0.99',
         ],
         'conflicts' => [
         ],
     ],
     'autoload' => [
         'psr-4' => [
-            'Meercad\\MeercadHelp\\' => 'Classes',
+            'Meercad\\HelpSystem\\' => 'Classes',
         ],
     ],
     'state' => 'stable',

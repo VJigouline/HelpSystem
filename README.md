@@ -1,4 +1,4 @@
-Sitepackage for the project "MeerCAD Help"
+Sitepackage for the project "Help System"
 ==============================================================
 
 Add some explanation here.

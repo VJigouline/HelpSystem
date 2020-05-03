@@ -1,18 +1,16 @@
 {
-    "name": "meercad/meercad-help",
+    "name": "meercad/help-system",
     "type": "typo3-cms-extension",
-    "description": "Help system for MeerCAD applications",
+    "description": "Help system for MeerCAD applications.",
     "homepage": "https://www.meercad.com",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
-        "typo3/cms-core": "^10.2",
-        "typo3/cms-rte-ckeditor": "^10.2",
-        "typo3/cms-fluid-styled-content": "^10.2"
+        "bk2k/bootstrap-package": "^10.0"
     },
     "autoload": {
         "psr-4": {
-            "Meercad\\MeercadHelp\\": "Classes/"
+            "Meercad\\HelpSystem\\": "Classes/"
         }
     }
 }

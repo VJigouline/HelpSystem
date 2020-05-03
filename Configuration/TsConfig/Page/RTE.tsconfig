@@ -3,6 +3,6 @@
 #############
 RTE {
     default {
-        preset = meercad_help
+        preset = help_system
     }
 }

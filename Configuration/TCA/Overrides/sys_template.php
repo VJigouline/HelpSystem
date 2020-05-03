@@ -6,14 +6,14 @@ call_user_func(function()
     /**
      * Temporary variables
      */
-    $extensionKey = 'meercad_help';
+    $extensionKey = 'help_system';
 
     /**
-     * Default TypoScript for MeercadHelp
+     * Default TypoScript for HelpSystem
      */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         $extensionKey,
         'Configuration/TypoScript',
-        'MeerCAD Help'
+        'Help System'
     );
 });

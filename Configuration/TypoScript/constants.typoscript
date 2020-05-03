@@ -1,56 +1,60 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
-
-
-##############################
-#### FLUID STYLED CONTENT ####
-##############################
-styles {
-    templates {
-        layoutRootPath = EXT:meercad_help/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:meercad_help/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:meercad_help/Resources/Private/Templates/ContentElements/
-    }
-}
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
 
 
 ############
 ### PAGE ###
 ############
 page {
-     fluidtemplate {
-        layoutRootPath = EXT:meercad_help/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:meercad_help/Resources/Private/Partials/Page/
-        templateRootPath = EXT:meercad_help/Resources/Private/Templates/Page/
+    logo {
+        file = EXT:help_system/Resources/Public/Images/logo.svg
+        fileInverted = EXT:help_system/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = Help System
+        linktitle = Help System
     }
-    meta {
-        description =
-        author =
-        keywords =
-        viewport = width=device-width, initial-scale=1
-        robots = index,follow
-        apple-mobile-web-app-capable = no
-        compatible = IE=edge
+    favicon {
+        file = EXT:help_system/Resources/Public/Icons/favicon.ico
     }
-    tracking {
-        google {
-            trackingID =
-            anonymizeIp = 1
-        }
+    fluidtemplate {
+        layoutRootPath = EXT:help_system/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:help_system/Resources/Private/Partials/Page/
+        templateRootPath = EXT:help_system/Resources/Private/Templates/Page/
     }
 }
 
 
-##############
-### CONFIG ###
-##############
-config {
-    no_cache = 0
-    removeDefaultJS = 0
-    admPanel = 1
-    prefixLocalAnchors = all
-    headerComment = build by sitepackagebuilder.com
-    sendCacheHeaders = 1
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:help_system/Resources/Private/Layouts/
+        partialRootPath = EXT:help_system/Resources/Private/Partials/
+        templateRootPath = EXT:help_system/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:help_system/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:help_system/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:help_system/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
 }
